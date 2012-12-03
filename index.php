@@ -1,5 +1,5 @@
 <?php
-require_once 'vimeo.class.php';
+require_once 'classes/autoload.php';
 
 $addr1 = 'http://vimeo.com/api/v2/channel/videoschool/videos.xml';
 $addr2 = 'http://vimeo.com/api/v2/channel/wineaftercoffee/videos.xml';
@@ -8,7 +8,7 @@ $vimeo = new vimeo;
 $vimeo->addFeed($addr1);
 $vimeo->addFeed($addr2);
 
-// $arr = $vimeo->getFeed();
+$arr = $vimeo->getFeed();
 // $arr = $vimeo->getFeed('water');
 
 // $searchArray = Array('glass', 'trix');
